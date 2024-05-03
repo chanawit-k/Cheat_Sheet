@@ -1,18 +1,18 @@
 # Steps to Initail GitHub
 
 ```bash
-    git init
+git init
 ```
 - create .gitignore and README.MD 
 
 ```bash
-    git add .
+git add .
 ```
 ```bash
-    git commit -am "initial commit"
+git commit -am "initial commit"
 ```
 ```bash
-    git remote add origin <your-gitrepo>
-    git branch -M main
-    git push -u origin main
+git remote add origin <your-gitrepo>
+git branch -M main
+git push -u origin main
 ```
