@@ -70,5 +70,11 @@ python -m venv ~/.venv
 ``` bash
 source ~/.venv/bin/activate
 ```
-4. install requirement เหมือน django ทั่วไปได้เรย
+4. install requirement เหมือน django ทั่วไปได้เรย ("." เพื้อให้ manage.py อยู่ที่ root)
+``` bash
+pip install -r requirements.txt
+django-admin startproject <project_name> .
+python manage.py startapp <app_name>
+
+```
 
