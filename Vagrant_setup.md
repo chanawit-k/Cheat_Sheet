@@ -57,7 +57,7 @@ vagrant ssh
 ```bash
 exit
 ```
-### 4. Create Virtual environment and Install Packages  (for python )
+### 5. Create Virtual environment and Install Packages  (for python )
 1. change directory to vagrant
 ``` bash
 cd /vagrant
