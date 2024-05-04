@@ -57,3 +57,18 @@ vagrant ssh
 ```bash
 exit
 ```
+### 4. Create Virtual environment and Install Packages  (for python )
+- change directory to vagrant
+``` bash
+cd /vagrant
+```
+- install Virtual environment ( "~/" is a home directory)
+``` bash
+python -m venv ~/.venv
+```
+- activate 
+``` bash
+source ~/.venv/bin/activate
+```
+- install requirement เหมือน django ทั่วไปได้เรย
+
