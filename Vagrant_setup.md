@@ -3,8 +3,8 @@
 
 ## ขั้นตอนการสร้าง Vagrant 
 ### 1. Download Programs
-    - [vagrant program](https://www.vagrantup.com/)
-    - [virtualbox](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1) (ใช้เป็นโปรแกรมสำหรับเอาไว้รัน VM)
+- [vagrant program](https://www.vagrantup.com/)
+- [virtualbox](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1) (ใช้เป็นโปรแกรมสำหรับเอาไว้รัน VM)
 ### 2. Create Vagrant File
 ```bash
 vagrant init ubuntu/bionic64
