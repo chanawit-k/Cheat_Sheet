@@ -59,26 +59,26 @@ exit
 ```
 ### 4. Create Virtual environment and Install Packages  (for python )
 1. change directory to vagrant
-``` bash
+```bash
 cd /vagrant
 ```
 2. install Virtual environment ( "~/" is a home directory)
-``` bash
+```python
 python -m venv ~/.venv
 ```
 3. activate 
-``` bash
+```bash
 source ~/.venv/bin/activate
 ```
 4. install requirement เหมือน django ทั่วไปได้เรย ("." เพื้อให้ manage.py อยู่ที่ root)
-``` python
+```python
 pip install -r requirements.txt
 django-admin startproject <project_name> .
 python manage.py startapp <app_name>
 
 ```
 4. runserver
-``` python
+```python
 python manage.py runserver 0.0.0.0:8000
 
 ```
