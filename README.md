@@ -7,6 +7,6 @@ All the Essential Knowledge Every Developer Must Possess
 - [How to initail GitHub](https://github.com/chanawit-k/Cheat_Sheet/blob/main/INIT_GIT.md)
 ### VM and Deployment
 - [How to use Vagrant](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Vagrant_setup.md)
-### Python and Django framework
+### Python and Django Framework
 - [Example Rest framework APIView and ViewSet](https://github.com/chanawit-k/profile-rest-api)
 
