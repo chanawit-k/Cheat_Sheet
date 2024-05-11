@@ -39,4 +39,3 @@ class YourViewTestCase(TestCase):
         self.assertEqual(data[0]['name'], 'Test')  # ตรวจสอบชื่อข้อมูล
         self.assertEqual(data[0]['description'], 'Test description')  # ตรวจสอบคำอธิบายข้อมูล
 ```
-- 
