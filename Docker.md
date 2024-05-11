@@ -61,6 +61,12 @@ services:
       sh -c "python manage.py runserver 0.0.0.0:8000"
 ```
 ## 3. คำสั่งที่ใช้
+```bash
+docker-compose build
+```
+- หน้าที่หลัก คือ การสร้างหรือรีบิลด์อิมเมจ Docker สำหรับเซอร์วิสต่างๆ ที่กำหนดใน docker-compose.yml
+- ไม่ได้รันคอนเทนเนอร์ คำสั่งนี้เพียงแค่สร้างอิมเมจเท่านั้น
+
 ```bash 
 docker-compose up
 ``` 
