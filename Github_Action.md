@@ -27,7 +27,7 @@ jobs:
       - name: Checkout #ต้อง checkout code ก่อนเริ่มทำอะไร
         uses: actions/checkout@v2
       - name: Test
-        run: docker-compose run --rm app sh -c "python manage.py test"
+        run: docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test"
       - name: Lint
         run: docker-compose run --rm app sh -c "flake8"
 ```
