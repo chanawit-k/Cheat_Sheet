@@ -12,3 +12,19 @@ All the Essential Knowledge Every Developer Must Possess
     - [How to use Docker](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Docker.md)   
 - Python AND Django framework
     - [Example Rest framework APIView and ViewSet](https://github.com/chanawit-k/profile-rest-api)
+
+- example markdown
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
