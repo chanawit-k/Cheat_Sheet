@@ -1,4 +1,4 @@
-# How to Using Docker Compose and Dockerfile
+# How to Using Docker Compose and Dockerfile [Ref](https://github.com/chanawit-k/recipes-app-api)
 
 ## 1. Dockerfile
 ไฟล์ที่มีคำสั่งในการสร้างภาพ (image) สำหรับคอนเทนเนอร์ Docker กำหนดรายละเอียดต่าง ๆ ได้ เช่น ระบบปฏิบัติการพื้นฐาน แพคเกจที่จำเป็น และคำสั่งในการรันโปรแกรม
