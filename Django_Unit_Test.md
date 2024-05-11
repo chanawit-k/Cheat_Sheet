@@ -3,7 +3,7 @@
 ## 1. Where do you put test ?
 - placeholder `tests.py` added to each app or create `tests/` subdirectory 
 > [!NOTE]  
-> Highlights information that users should take into account, even when skimming. Only Use `tests.py` or `tests/` (not both)
+> Only Use `tests.py` or `tests/` (not both)
 > Test module must start with `test_`
 > Test directory must contain `__init__.py`
 
