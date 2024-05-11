@@ -5,6 +5,7 @@ All the Essential Knowledge Every Developer Must Possess
 - SSH AND GITHUB Initial 
     - [How to generate SSH Key](https://github.com/chanawit-k/Cheat_Sheet/blob/main/SSH_GenKey.md)
     - [How to initail GitHub](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Initail_Git.md)
+    - [GitHub Action](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Github_Action.md)
 - VM and Deployment
     - [How to use Vagrant](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Vagrant_setup.md)
 - Docker Configuration

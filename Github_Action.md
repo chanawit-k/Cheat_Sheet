@@ -1,11 +1,10 @@
 # How to GenKey from Docker and Setup Action in GitHub 
 - Run Jobs when Code Change
 - Automate Tasks
-## 1. Generate Key
-    - [Url-to-generate-key](https://hub.docker.com/settings/security)
+## 1. Generate Key [Url-to-generate-key](https://hub.docker.com/settings/security)
 
 ## 2. สร้าง Secret Action ใน GitHub 
-    - https://github.com/chanawit-k/recipes-app-api/settings/secrets/actions
+    https://github.com/chanawit-k/recipes-app-api/settings/secrets/actions
 
 ## 3. Configuring Github Actions
 - Create Config file at .github/workflows/checks.yml
