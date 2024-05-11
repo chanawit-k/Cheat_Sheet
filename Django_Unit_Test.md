@@ -3,9 +3,9 @@
 ## 1. Where do you put test ?
 - placeholder `tests.py` added to each app or create `tests/` subdirectory 
 > [!NOTE]  
-> Only Use `tests.py` or `tests/` (not both)
-> Test module must start with `test_`
-> Test directory must contain `__init__.py`
+> - Only Use `tests.py` or `tests/` (not both)
+> - Test module must start with `test_`
+> - Test directory must contain `__init__.py`
 
 ## 2. SimpleTestCase and TestCase 
 - `SimpleTestCase`  = No database
@@ -39,3 +39,4 @@ class YourViewTestCase(TestCase):
         self.assertEqual(data[0]['name'], 'Test')  # ตรวจสอบชื่อข้อมูล
         self.assertEqual(data[0]['description'], 'Test description')  # ตรวจสอบคำอธิบายข้อมูล
 ```
+- 
