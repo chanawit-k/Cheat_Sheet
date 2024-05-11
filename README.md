@@ -12,7 +12,7 @@ All the Essential Knowledge Every Developer Must Possess
     - [How to use Docker](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Docker.md)   
 - Python AND Django framework
     - [Example Rest framework APIView and ViewSet](https://github.com/chanawit-k/profile-rest-api)
-    - [Unit Test](https://github.com/chanawit-k/Django_Unit_Test.md)
+    - [Unit Test](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Django_Unit_Test.md)
 
 - example markdown
 > [!NOTE]  
