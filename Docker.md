@@ -19,11 +19,15 @@ EXPOSE 8000 # เปิด Port 8000 ของ Container
 ARG DEV=false  # ตั้งค่า argument DEV เริ่มต้นเป็น false
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
+    apk add --update --no-cache postgresql-client && \
+    apk add --update --no-cache --virtual .tmp-build-deps \
+        build-base postgresql-dev musl-dev && \
     /py/bin/pip install -r /tmp/requirements.txt && \
     if [ $DEV = "true" ]; \
         then /py/bin/pip install -r /tmp/requirements.dev.txt ; \
     fi && \
     rm -rf /tmp && \
+    apk del .tmp-build-deps && \
     adduser \
         --disabled-password \
         --no-create-home \
@@ -31,9 +35,12 @@ RUN python -m venv /py && \
     
 # สร้าง Virtual Environment Python (/py)
 # Upgrade pip
+# ติดตั้งไคลเอนต์ PostgreSQL
+# ติดตั้ง Build Dependencies
 # Install packages จากไฟล์ requirements.txt
 # ถ้า DEV=true ก็ Install packages เพิ่มจากไฟล์ requirements.dev.txt
 # ลบไดเรกทอรี่ /tmp ออก
+# ลบไฟล์ชั่วคราวและ Build Dependencies ออก
 # สร้างผู้ใช้ django-user โดยไม่ต้องรหัสผ่านและไม่สร้างโฮมไดเรกทอรี่ (เป็นมาตรฐานการปฏิบัติเพื่อความปลอดภัย)
 
 ENV PATH="/py/bin:$PATH"
@@ -59,6 +66,26 @@ services:
       # Mount ไดเรกทอรี่ app จากโฮสต์ไปยัง /app ใน container เพื่อสามารถแก้ไขโค้ดโดยไม่ต้องสร้างใหม่
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=devdb
+      - DB_USER=devuser
+      - DB_PASS=changeme
+      # ใช้ Config DB ใน setting.py 
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data # path ที่อยู่ DB
+    environment:
+      - POSTGRES_DB=devdb
+      - POSTGRES_USER=devuser
+      - POSTGRES_PASSWORD=changeme
+
+volumes:
+  dev-db-data:
 ```
 ## 3. คำสั่งที่ใช้
 ```bash
