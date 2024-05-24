@@ -14,6 +14,7 @@ All the Essential Knowledge Every Developer Must Possess
     - [Configuration](https://github.com/chanawit-k/django_template)
     - [Example Rest framework APIView and ViewSet](https://github.com/chanawit-k/profile-rest-api)
     - [Unit Test](https://github.com/chanawit-k/Cheat_Sheet/blob/main/Django_Unit_Test.md)
+    - [Config venv in VScode](https://stackoverflow.com/questions/65369567/import-rest-framework-could-not-be-resolved-but-i-have-installed-djangorestfr)
 
 - example markdown
 > [!NOTE]  
