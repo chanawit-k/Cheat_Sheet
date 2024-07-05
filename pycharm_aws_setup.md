@@ -1,13 +1,10 @@
 # Guide: Installing PyCharm, Configuring PyCharm, AWS SSO, and AWS Toolkit
-## 1. Generate personal_access_tokens
-[link to personal_access_tokens](https://gitlab.auto.buk0.com/-/user_settings/personal_access_tokens)
-guild for generate personal_access_tokens and how to insert password first time in terminak
-- "Add new token"
-- insert name and delete expiration date select "api" in Select scopes Topic
+
 ## Generating a Personal Access Token
 
 1. **Open the Personal Access Tokens Page**
-   - Visit the [Personal Access Tokens page](https://gitlab.auto.buk0.com/-/user_settings/personal_access_tokens) on GitLab.
+   - Click [here](https://gitlab.auto.buk0.com/-/user_settings/personal_access_tokens) to access the Personal Access Tokens page on GitLab.
+
 
 2. **Create a New Token**
    - Click the **"Add new token"** button.
@@ -33,7 +30,6 @@ guild for generate personal_access_tokens and how to insert password first time 
    - When prompted for your GitLab credentials:
      - **Username**: Enter your GitLab username.
      - **Password**: Paste the personal access token you generated.
-- copy your personal key and press when clone first time only
 ```bash
 git init
 ```
