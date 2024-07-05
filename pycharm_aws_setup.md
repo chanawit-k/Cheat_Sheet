@@ -38,7 +38,7 @@
 **Download JetBrains Toolbox**
    - Visit the [JetBrains Toolbox App page](https://www.jetbrains.com/toolbox-app/)
 
-### config PyCharm
+### Configuring PyCharm
 1. **Configure Python Interpreter**
    - Navigate to `PyCharm > Preferences > Project: <Your Project Name> > Python Interpreter`.
    - Click on the gear icon next to the interpreter dropdown and select **Add...**.
