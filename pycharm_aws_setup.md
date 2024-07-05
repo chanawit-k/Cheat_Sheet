@@ -30,19 +30,20 @@
    - When prompted for your GitLab credentials:
      - **Username**: Enter your GitLab username.
      - **Password**: Paste the personal access token you generated.
-```bash
-git init
-```
-- create .gitignore and README.MD
 
-```bash
-git add .
-```
-```bash
-git commit -am "initial commit"
-```
-```bash
-git remote add origin <your-gitrepo>
-git branch -M main
-git push -u origin main
-```
+
+##
+
+## Install PyCharm and Intellij
+**Download JetBrains Toolbox**
+   - Visit the [JetBrains Toolbox App page](https://www.jetbrains.com/toolbox-app/)
+
+### config PyCharm
+1. **Configure Python Interpreter**
+   - Navigate to `PyCharm > Preferences > Project: <Your Project Name> > Python Interpreter`.
+   - Click on the gear icon next to the interpreter dropdown and select **Add...**.
+   - Select the interpreter path or create a new virtual environment.
+
+3. **Install Plugin**
+   - Visit the [Requirements plugin page](https://plugins.jetbrains.com/plugin/10837-requirements/versions#tabs).
+   - Search for **AWS Toolkit** and click **Install** in Marketplace.
