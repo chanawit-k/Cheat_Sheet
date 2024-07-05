@@ -34,48 +34,24 @@
 
 ## Install PyCharm and Configuration
 **Download JetBrains Toolbox**
-   - Visit the [JetBrains Toolbox App page](https://www.jetbrains.com/toolbox-app/)
+- Visit the [JetBrains Toolbox App page](https://www.jetbrains.com/toolbox-app/)
 
-    ### Configuring PyCharm
-    1. **Configure Python Interpreter**
-        - Navigate to **PyCharm > Preferences > Project: <Your Project Name> > Python Interpreter**.
-        - Click on the gear icon next to the interpreter dropdown and select **Add...**.
-        - Select the interpreter path or create a new virtual environment.
+### Configuring PyCharm
+1. **Configure Python Interpreter**
+    - Navigate to **PyCharm > Preferences > Project: <Your Project Name> > Python Interpreter**.
+    - Click on the gear icon next to the interpreter dropdown and select **Add...**.
+    - Select the interpreter path or create a new virtual environment.
 
-    2. **Install Plugin**
-        - Visit the [Requirements plugin page](https://plugins.jetbrains.com/plugin/10837-requirements/versions#tabs).
-        - In PyCharm, navigate to `PyCharm > Preferences > Plugins > ⚙️ (Gear Icon) > Install Plugin from Disk...`.
-        - Search for **AWS Toolkit** and click **Install** in Marketplace.
-    3. **Set Shared Folder as Source Root**
-        - Right-click on **Shared** folder you want to set as the Source Root.
-        - Select **Mark Directory as > Sources Root**.
-
-## Install aws-sso-credential-process
-
-- **Set up your .aws/config file for AWS SSO as normal**
-    [profile ka-sso-apim-dev-Administrator]
-    credential_process = aws-sso-credential-process --profile ka-sso-apim-dev-Administrator --interactive
-    sso_start_url = https://ksauto.awsapps.com/start
-    sso_region = ap-southeast-1
-    sso_account_id = 644481786460
-    sso_role_name = PowerUser
-    sso_interactive_auth=true
-    region = ap-southeast-1
-    output = json
-
-    [profile apim-dev-agent]
-    role_arn = arn:aws:iam::688318228301:role/prod-devsecops-cluster-apim-nonprod-agent-sa
-    source_profile = ka-sso-apim-dev-Administrator
-- **Add credentails file**
-1.**Create file credentials**
-https://ksauto.awsapps.com/start/#/?tab=accounts
-open accesskey and insert aws_access_key_id and aws_secret_access_key
-[default]
-aws_access_key_id = ASIAZMDQ3UJOEBWVRDYK
-aws_secret_access_key = zFGJnFnZ+WIEH9/UhZUWVCM08sW9KvH2VVGEZDcX
+2. **Install Plugin**
+    - Visit the [Requirements plugin page](https://plugins.jetbrains.com/plugin/10837-requirements/versions#tabs).
+    - In PyCharm, navigate to `PyCharm > Preferences > Plugins > ⚙️ (Gear Icon) > Install Plugin from Disk...`.
+    - Search for **AWS Toolkit** and click **Install** in Marketplace.
+3. **Set Shared Folder as Source Root**
+    - Right-click on **Shared** folder you want to set as the Source Root.
+    - Select **Mark Directory as > Sources Root**.
 
 ## Configure AWS SSO in `.aws/config`
-- Click [here](https://github.com/benkehoe/aws-sso-credential-process)
+- Click [here](https://github.com/benkehoe/aws-sso-credential-process) for tutorial
 1. **Setup `.aws/config` File**
    - Open or create the `.aws/config` file in your home directory (`~/.aws/config`).
 
