@@ -77,9 +77,9 @@
      aws_secret_access_key = <your-secret-access-key>
      ```
 ## how to config run configuration
-1. Select `Use the currently selected credentail profile/region` in the `run/debug Configuration` menu.
+1. Select **Use the currently selected credentail profile/region** in the **run/debug Configuration** menu.
 
 2. Add environment variables from your Lambda function:
-   - Navigate to `configuration > environment variable` in your Lambda function settings.
+   - Navigate to **configuration > environment variable** in your Lambda function settings.
    - Copy the environment variables.
-   - Paste these variables into the `Environment variable` section of the `run/debug Configuration` in PyCharm.
+   - Paste these variables into the **Environment variable section** of the run/debug Configuration in PyCharm.
