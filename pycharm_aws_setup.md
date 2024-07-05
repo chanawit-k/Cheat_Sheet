@@ -44,7 +44,12 @@
    - Click on the gear icon next to the interpreter dropdown and select **Add...**.
    - Select the interpreter path or create a new virtual environment.
 
-3. **Install Plugin**
+2. **Install Plugin**
    - Visit the [Requirements plugin page](https://plugins.jetbrains.com/plugin/10837-requirements/versions#tabs).
    - In PyCharm, navigate to `PyCharm > Preferences > Plugins > ⚙️ (Gear Icon) > Install Plugin from Disk...`.
    - Search for **AWS Toolkit** and click **Install** in Marketplace.
+3. **Set Shared Folder as Source Root**
+   - Right-click on **Shared** folder you want to set as the Source Root.
+   - Select **Mark Directory as > Sources Root**.
+
+
