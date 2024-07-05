@@ -46,4 +46,5 @@
 
 3. **Install Plugin**
    - Visit the [Requirements plugin page](https://plugins.jetbrains.com/plugin/10837-requirements/versions#tabs).
+   - In PyCharm, navigate to `PyCharm > Preferences > Plugins > ⚙️ (Gear Icon) > Install Plugin from Disk...`.
    - Search for **AWS Toolkit** and click **Install** in Marketplace.
