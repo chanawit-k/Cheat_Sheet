@@ -67,6 +67,8 @@
      sso_interactive_auth = true
      region = ap-southeast-1
      output = json
+     [default]
+     region = ap-southeast-1
      ```
 3. **Create or Update `credentials` File**
    - Open or create the `.aws/credentials` file in your home directory (`~/.aws/credentials`).
